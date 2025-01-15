@@ -26,9 +26,7 @@ describe('Account Registration', () => {
     // Agree to the privacy policy
     cy.get("input[name='agree']").check({force: true});
 
-    
-
-    // Submit the form
+       // Submit the form
     cy.get("input[value='Continue']").click({force: true});
 
     // Verify successful registration
